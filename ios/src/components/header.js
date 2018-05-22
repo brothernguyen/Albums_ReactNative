@@ -1,11 +1,11 @@
 import React from 'react';
 import { Text, View } from 'react-native';
 
-const Header = () => {
-    const {textStyle, viewStyle} = style;
+const Header = (props) => {
+    const { textStyle, viewStyle } = style;
     return (
         <View style={viewStyle}>
-            <Text style={textStyle}>Movie!</Text>
+            <Text style={textStyle}>{ props.headerText }</Text>
         </View>
     );
 };
@@ -16,9 +16,9 @@ const style = {
         justifyContent: 'center',
         alignItems: 'center',
         height: 60,
-        paddingTop:15,
+        paddingTop: 15,
         shadowColor: '#000',
-        shadowOffset: {width: 0, height: 2},
+        shadowOffset: { width: 0, height: 2 },
         shadowOpacity: 0.2,
         elevation: 2,
         position: 'relative'
