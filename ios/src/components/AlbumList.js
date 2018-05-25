@@ -24,8 +24,15 @@ class AlbumList extends Component {
                 <Text>{ this.renderAlbums() }</Text> 
             </View>
         );
-    }
+    }    
     
 }
+
+const styles = {
+    headerContentStyle: {
+        flexDirection: 'column',
+        justifyContent: 'space-around'
+    }
+};
 
 export default AlbumList;
