@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, Text } from 'react-native';
+import { View } from 'react-native';
 
 const Card = (props) => {
     return (
@@ -10,7 +10,7 @@ const Card = (props) => {
 };
 
 const styles = {
-    containerStyle: {                
+    containerStyle: {                               
         borderWidth: 1,
         borderRadius: 2,
         borderColor: '#ddd',

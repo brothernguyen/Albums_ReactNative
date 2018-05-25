@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, Text } from 'react-native';
+import { View } from 'react-native';
 import axios from 'axios';
 import AlbumDetail from './AlbumDetail';
 
@@ -21,18 +21,11 @@ class AlbumList extends Component {
         console.log(this.state);
         return (
             <View>
-                <Text>{ this.renderAlbums() }</Text> 
+                { this.renderAlbums() } 
             </View>
         );
     }    
     
 }
-
-const styles = {
-    headerContentStyle: {
-        flexDirection: 'column',
-        justifyContent: 'space-around'
-    }
-};
 
 export default AlbumList;

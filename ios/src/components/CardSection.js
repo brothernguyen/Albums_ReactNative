@@ -15,11 +15,10 @@ const styles = {
         padding: 5,
         backgroundColor: '#fff',
         justifyContent: 'flex-start',
-        flexDirection: 'column',
+        flexDirection: 'row',
         borderColor: '#ddd',
         position: 'relative'
     }
 };
-
 
 export default CardSection;
